@@ -1,6 +1,13 @@
 @import "colors";
 @import "fonts";
 @import "structure";
+
+
+// Include any default variable overrides here (though functions won't be available)
+
+
+@import "../bootstrap/scss/bootstrap";
+
 /*MAP PARA DEFINIR TAMAÑOS DE FUENTE*/
 
 $cuerpo-letra: (
