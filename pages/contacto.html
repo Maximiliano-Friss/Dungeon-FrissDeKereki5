@@ -20,92 +20,93 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top navegador">
-		<div class="container-fluid navegador__barra">
-			<img class="navbar__logo" src="../img/door.png" alt="Logo">
-            <h1 class="navbar__h1 animate__animated animate__backInRight animate__slower">DUNGEON</h1>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./salas.html">Salas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./tarifas.html">Tarifas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./reservas.html">Reservas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="#">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+      <div class="container-fluid navegador__barra">
+        <img class="navbar__logo" src="../img/door.png" alt="Logo">
+        <h1 class="navbar__h1 animate__animated animate__backInRight animate__slower">DUNGEON</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./salas.html">Salas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tarifas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+	  </nav>
 
     <main>
 
-    <!-- LOGOS -->
-    <div class="contenedor__logo__grid mt-5">
+      <!-- LOGOS -->
+
+      <div class="contenedor__logo__grid mt-5">
         <div class="contenedor__antorchaIzq">
-            <img class="antorchaIzq animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="../img/torch.png" alt="antorcha">
+          <img class="antorchaIzq animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="../img/torch.png" alt="antorcha">
         </div>
         <div class="contenedor__logo d-flex justify-content-center">
-            <a href="./reservas.html">
+          <a href="./reservas.html">
             <img class="logo__cerrado" src="../img/door.png" alt="AbreLaPuerta">
-            </a>
+          </a>
         </div>
         <div class="contenedor__logo d-flex justify-content-center">
-            <a href="./reservas.html">
+          <a href="./reservas.html">
             <img class="logo__abierto" src="../img/doorB.png" alt="EntraAlDungeon">
-            </a>
+          </a>
         </div>
         <div class="contenedor__antorchaDer d-flex justify-content-center align-items-center">
-            <img class="antorchaDer animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="../img/torch.png" alt="antorcha">
+          <img class="antorchaDer animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="../img/torch.png" alt="antorcha">
         </div>
-        </div>
+      </div>
 
-    <!-- FORM CONTACTO -->
-    <div class="container pt-3">
-        <h3 class="sect__titulo">Contacto</h3>
-        <div class="row sect__container justify-content-center form__contenedor">
-            <form class="row g-3">
-                <div class="row g-3">
-                    <div class="col-md-6 col-sm-12">
-                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+      <!-- FORM CONTACTO -->
+      <div class="container pt-3">
+          <h3 class="sect__titulo">Contacto</h3>
+          <div class="row sect__container justify-content-center form__contenedor">
+              <form class="row g-3">
+                  <div class="row g-3">
+                      <div class="col-md-6 col-sm-12">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                      </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
-                    </div>
+                  <div class="col-md-6 col-sm-12">
+                      <input type="email" class="form-control" placeholder="Email" id="inputEmail4" required>
                   </div>
-                <div class="col-md-6 col-sm-12">
-                    <input type="email" class="form-control" placeholder="Email" id="inputEmail4" required>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="form-check d-flex justify-content-evenly">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Deseo recibir noticias de DUNGEON
-                        </label>
-                    </div>
-                </div>
-                <div class="mb-1">
-                    <textarea class="form-control" placeholder="Dejanos tu mensaje aquí..." id="exampleFormControlTextarea1" rows="5" required></textarea>
-                </div>
-                <div class="row g-3 align-items-center justify-content-center mb-3 mx-1">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="reset" class="btn btn-borrar">Borrar todo</button>
-                        <button type="submit" class="btn btn-enviar">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+                  <div class="col-md-6 col-sm-12">
+                      <div class="form-check d-flex justify-content-evenly">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                              Deseo recibir noticias de DUNGEON
+                          </label>
+                      </div>
+                  </div>
+                  <div class="mb-1">
+                      <textarea class="form-control" placeholder="Dejanos tu mensaje aquí..." id="exampleFormControlTextarea1" rows="5" required></textarea>
+                  </div>
+                  <div class="row g-3 align-items-center justify-content-center mb-3 mx-1">
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="reset" class="btn btn-borrar">Borrar todo</button>
+                          <button type="submit" class="btn btn-enviar">Enviar</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
 
     </main>	
 

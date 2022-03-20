@@ -1,11 +1,12 @@
 @import "colors";
 @import "fonts";
 @import "structure";
-
-
 // Include any default variable overrides here (though functions won't be available)
-
-
+$navbar-dark-color: $color_textos;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: $color_detalles2;
+$carousel-caption-color: $color_textos;
+$carousel-control-color: $color_textos;
 @import "../bootstrap/scss/bootstrap";
 
 /*MAP PARA DEFINIR TAMAÑOS DE FUENTE*/
@@ -120,7 +121,7 @@ $cuerpo-letra: (
     }
   }
 
-  /*SE AGREGAN EXTEND PARA REUTILIZAR LAS CLASES .contenedor__antorchaIzq
+  /*SE AGREGAN EXTENDS PARA REUTILIZAR LAS CLASES .contenedor__antorchaIzq
   y .antorcha*/
   
   .contenedor__antorchaDer {
