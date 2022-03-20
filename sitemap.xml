@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://maximiliano-friss.github.io/Dungeon-FrissDeKereki4/index.html</loc>
+  <lastmod>2022-03-15T22:49:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maximiliano-friss.github.io/Dungeon-FrissDeKereki4/pages/salas.html</loc>
+  <lastmod>2022-03-15T22:49:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliano-friss.github.io/Dungeon-FrissDeKereki4/pages/tarifas.html</loc>
+  <lastmod>2022-03-15T22:49:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliano-friss.github.io/Dungeon-FrissDeKereki4/pages/reservas.html</loc>
+  <lastmod>2022-03-15T22:49:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maximiliano-friss.github.io/Dungeon-FrissDeKereki4/pages/contacto.html</loc>
+  <lastmod>2022-03-15T22:49:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

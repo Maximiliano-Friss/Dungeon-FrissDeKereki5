@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <!-- <head>    AGREGAR GIT, MODIFICAR LOS HEAD, AGREGAR LAS VARIABLES DE BOOTSTRAP. LISTO -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dungeon Escape Rooms ofrece una variedad de Salas de Escape, una moderna forma de entretenimiento donde 2 a 4 jugadores trabajan en equipo para intentar salir de una habitación temática en menos de una hora.">
+    <meta name="keywords" content="dungeon, salas de escape, escape rooms, ingenio, juegos, trabajo en equipo, entretenimiento, juegos Montevideo, Montevideo, Uruguay">
+    <!-- Animate.style -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>DUNGEON - Escape Rooms | Inicio</title>
+	</head>
+
+  <body>
+
+	<!-- NAVBAR -->
+  
+	<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top navegador">
+		<div class="container-fluid navegador__barra">
+			<img width="30" height="32" src="./img/door.png" alt="Logo">
+      <a href="#" class="h1 navbar__h1 animate__animated animate__backInRight animate__slower text-decoration-none">DUNGEON</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/salas.html">Salas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/tarifas.html">Tarifas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/reservas.html">Reservas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<!-- BANNER -->
+
+		<div class="container-fluid banner">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h2 class="banner__h2">¿TIENES LO NECESARIO PARA SALIR A TIEMPO?</h2>
+				</div>
+			</div>
+		</div>
+		
+		<!-- SECTION 1 -->
+
+		<div class="container mt-5 sect__container">
+			<h3 class="sect__titulo">¿Qué es una sala de escape?</h3>
+			<div class="row">
+				<div class="col-sm-12 col-md-4 align-self-center">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum blanditiis veritatis voluptate quos possimus sunt tenetur, ipsa magni amet incidunt, hic ullam explicabo quod pariatur temporibus nobis! Perferendis, beatae aliquid!</p>
+				</div>
+				<div class="col-sm-12 col-md-8 ratio ratio-16x9 sect__iframe">
+					<iframe src="https://www.youtube.com/embed/McHENnNXlpc" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	
+		<!-- LOGOS -->
+
+		<div class="contenedor__logo__grid">
+			<div class="contenedor__antorchaIzq">
+				<img class="antorchaIzq animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="./img/torch.png" alt="antorcha">
+			</div>
+			<div class="contenedor__logo d-flex justify-content-center">
+				<a href="./pages/reservas.html">
+					<img class="logo__cerrado" src="./img/door.png" alt="AbreLaPuerta">
+				</a>
+			</div>
+			<div class="contenedor__logo d-flex justify-content-center">
+				<a href="./pages/reservas.html">
+					<img class="logo__abierto" src="./img/doorB.png" alt="EntraAlDungeon">
+				</a>
+			</div>
+			<div class="contenedor__antorchaDer d-flex justify-content-center align-items-center">
+				<img class="antorchaDer animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="./img/torch.png" alt="antorcha">
+			</div>
+		</div>
+		
+		<!-- SECTION 2 -->
+
+		<div class="container mt-5 w-75 sect__container">
+			<div class="row">
+				<div>
+					<h3 class="sect__titulo">Nuevas Salas</h3>
+				</div>
+				<div id="carouselExampleCaptions" class="col-sm-12 carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					</div>
+					<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./img/simon-berger-boyXZfqpwpU-unsplashREDIMEN.jpg" class="d-block w-100" alt="AntiguoEgipto">
+						<div class="carousel-caption d-block">
+							<h5>Antiguo Egipto</h5>
+							<p>Jeroglíficos, arena y una maldición milenaria</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="./img/zoltan-tasi-HTpAIzZRHvw-unsplashREDIM.jpg" class="d-block w-100" alt="TesoroPirata">
+						<div class="carousel-caption d-block">
+							<h5>Tesoro Pirata</h5>
+							<p>La tripulación está lista para zarpar, pero el mapa ha desaparecido</p>
+						</div>
+					</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+	</main>	
+
+	<!-- FOOTER -->
+
+	<footer class="mt-5 pt-4">
+		<div class="container-fluid text-center text-md-left">
+			<div class="row">
+				<!-- Footer Descripción -->
+				<div class="col-md-1"></div>
+				<div class="col-md-4 col-sm-12 mt-md-0 mt-3">
+					<h5 class="text-uppercase">Dungeon - <span class="subt">Escape Rooms</span></h5>
+					<ul class="list-unstyled footer__info">
+						<li><span class="subt">Martes a Viernes: </span>15:00 a 21:00</li>
+						<li><span class="subt">Sábados y Domingos: </span>12:00 a 23:00</li>
+						<li>Avenida Fox River 2428, Hill Valley.</li>
+					</ul>
+				</div>
+				<div class="col-md-3"></div>
+				<!-- Footer Redes -->
+				<div class="col-md-2 col-sm-12 mb-md-0 mb-3 d-flex flex-column">
+					<h5 class="footer__tituloredes">Encontranos en nuestras redes</h5>
+					<ul class="list-unstyled footer__iconosredes">
+						<li class="list-inline-item">
+							<a href="http://www.facebook.com" target="_blank">
+								<img  class="redes_img" src="./img/facebook-logo.png" alt="facebookicon">
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="http://www.instagram.com" target="_blank">
+								<img class="redes_img" src="./img/instagram.png" alt="instagramicon">
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="http://www.youtube.com" target="_blank">
+								<img class="redes_img" src="./img/youtube.png" alt="youtubeicon">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="text-center py-3">© 2022 Copyright:
+			<a class="linkCopyright" href="https://dungeonescaperooms.com/"> Dungeon INC.</a>
+			</div>
+		</div>
+	</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

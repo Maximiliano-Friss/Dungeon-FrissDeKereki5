@@ -1,0 +1,280 @@
+@import "colors";
+@import "fonts";
+@import "structure";
+/*MAP PARA DEFINIR TAMAÑOS DE FUENTE*/
+
+$cuerpo-letra: (
+  mini: 0.8em,
+  chico: 1em,
+  medio: 1.5em,
+  grande:3em
+);
+
+/*MIXIN PARA DEFINIR ESTILO DE FUENTE Y COLOR*/
+
+@mixin estilos-letra($fontStyle, $color){
+  font-style: $fontStyle;
+  color: $color;
+}
+
+/*CSS NAVBAR*/
+
+.navegador {
+  padding: 0;
+
+  .navegador__barra {
+    background-color: rgb(65, 0, 0);
+    text-align: center;
+
+    .navbar__logo {
+      width: 1.8em;
+    }
+    
+    .navbar__h1 {
+      @include estilos-letra(normal, $color_textos);
+      font-size: map-get($cuerpo-letra, medio);
+      margin: 0 auto 0 0.2em;
+      letter-spacing: 0.2em;
+    }
+  }
+}
+
+/*CSS BANNER*/
+
+.banner {
+  background-image: url(../img/bannerdungeon.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  
+  .banner__h2 {
+    @include estilos-letra(normal, $color_textos);
+    font-size: map-get($cuerpo-letra, grande);
+    text-shadow: 3px 3px black;
+    text-align: center;
+    animation-name: colorLetras;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes colorLetras {
+    0% {color: $color_textos;}
+    25% {color: $color_detalles1;}
+    50% {color: $color_textos;}
+  }
+}
+
+/*LOGOS*/
+
+.contenedor__logo__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  
+  .contenedor__logo {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    
+    .logo__cerrado {
+      width: 8rem;
+    }
+    
+    .logo__abierto {
+      width: 8.2rem;
+      opacity: 0;
+      transition: opacity 0.2s;
+      
+      &:hover {
+        opacity: 100%;
+      }
+    }
+    
+    #logo__abiertoReservas {
+      width: 8.2rem;
+    }
+  }
+  
+  .antorcha {
+    width: 5rem;
+    align-self: flex-end;
+  }
+
+  .contenedor__antorchaIzq {
+    grid-column: 1/1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+    .antorchaIzq {
+      @extend .antorcha;
+    }
+  }
+
+  /*SE AGREGAN EXTEND PARA REUTILIZAR LAS CLASES .contenedor__antorchaIzq
+  y .antorcha*/
+  
+  .contenedor__antorchaDer {
+    @extend .contenedor__antorchaIzq;
+    grid-column: 3/4;
+  }
+  
+  .antorchaDer {
+    @extend .antorcha;
+    align-self: flex-start;
+  }
+}
+
+/*CSS SECTION*/
+
+.sect__titulo {
+  @include estilos-letra(italic, $color_textos);
+  text-align: center;
+}
+
+.sect__container {
+  border-top: solid 5px $color_detalles3;
+  border-bottom: solid 5px $color_detalles3;
+  border-radius: 1%;
+  padding: 1em;
+  margin: auto;
+  margin-bottom: 3em;
+  max-width: 60rem;
+  color: $color_textos;
+  text-align: center;
+
+  .sect__iframe {
+    width:66%;
+  }
+
+  @media screen and (max-width:768px) {
+    .sect__iframe {
+        width: 100%;
+    }
+  }
+}
+
+/*CSS FOOTER*/
+
+footer {
+  color: #a37676;
+  background-color: $color_detalles3;
+  
+  .subt {
+    color: $color_textos;
+  }
+  
+  .footer__info {
+    font-size: map-get($cuerpo-letra, mini);
+  }
+  
+  .redes_img {
+    width: 1.5rem;
+  }
+  
+  .footer__tituloredes {
+    font-size: map-get($cuerpo-letra, chico);
+  }
+  
+  .linkCopyright {
+    @include estilos-letra(italic, $color_detalles1);
+    transition: 0.2s;
+
+    &:hover {
+      color: $color_textos;
+    }
+    
+    &:active {
+      color: $color_detalles1;
+    }
+  }
+}
+
+
+/*CSS SALAS*/
+
+.salas__contenedor {
+  max-width: 100%;
+  
+  .salas__tarjeta {
+    color: $color_detalles3;
+    margin-top: 2em;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .salas__contenedor {
+      max-width: 70%;
+    }
+    
+    .salas__tarjeta {
+      transition: transform 0.2s;
+      
+      &:hover {
+          transform: scale(1.3);
+          z-index: 2;
+      }
+      
+      .enlace__reservas {
+        color: $color_detalles2;
+        
+        &:hover {
+          color: $color_detalles1;
+        }
+      }
+    }
+  }
+}
+
+
+/*CSS TARIFAS*/
+
+table {
+  font-size: map-get($cuerpo-letra, medio);
+  
+  th, td {
+    color: $color_textos;
+  }
+}
+
+
+/*CSS FORMS*/
+
+.form__contenedor {
+  max-width: 45rem;
+  margin: auto;
+  
+  form {
+    color: $color_textos;
+    border: outset 2px $color_detalles2;
+    border-radius: 5%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    .form__reservas {
+      max-width: 20rem;
+    }
+    
+    .btn-enviar {
+      background-color:$color_detalles1;
+      color: $color_textos;
+      
+      &:hover {
+        background-color: #2fd107;
+      }
+    }
+    /*SE AGREGA UN EXTEND PARA REUTILIZAR LA CLASE .btn-enviar*/
+    .btn-borrar {
+      @extend .btn-enviar;
+      background-color: $color_detalles2;
+     
+      &:hover {
+        background-color: $color_detalles3;
+      }
+    }
+  }
+}
+

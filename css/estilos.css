@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  font-family: "Alatsi", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: linear-gradient(to bottom, #260000, black); }
+
+main {
+  position: relative;
+  top: 2rem;
+  min-height: 38em; }
+
+/*MAP PARA DEFINIR TAMAÑOS DE FUENTE*/
+/*MIXIN PARA DEFINIR ESTILO DE FUENTE Y COLOR*/
+/*CSS NAVBAR*/
+.navegador {
+  padding: 0; }
+  .navegador .navegador__barra {
+    background-color: #410000;
+    text-align: center; }
+    .navegador .navegador__barra .navbar__logo {
+      width: 1.8em; }
+    .navegador .navegador__barra .navbar__h1 {
+      font-style: normal;
+      color: #FFF3B0;
+      font-size: 1.5em;
+      margin: 0 auto 0 0.2em;
+      letter-spacing: 0.2em; }
+
+/*CSS BANNER*/
+.banner {
+  background-image: url(../img/bannerdungeon.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem; }
+  .banner .banner__h2 {
+    font-style: normal;
+    color: #FFF3B0;
+    font-size: 3em;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    animation-name: colorLetras;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; }
+
+@keyframes colorLetras {
+  0% {
+    color: #FFF3B0; }
+  25% {
+    color: #335C67; }
+  50% {
+    color: #FFF3B0; } }
+
+/*LOGOS*/
+.contenedor__logo__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  /*SE AGREGAN EXTEND PARA REUTILIZAR LAS CLASES .contenedor__antorchaIzq
+  y .antorcha*/ }
+  .contenedor__logo__grid .contenedor__logo {
+    grid-column: 2/3;
+    grid-row: 1/1; }
+    .contenedor__logo__grid .contenedor__logo .logo__cerrado {
+      width: 8rem; }
+    .contenedor__logo__grid .contenedor__logo .logo__abierto {
+      width: 8.2rem;
+      opacity: 0;
+      transition: opacity 0.2s; }
+      .contenedor__logo__grid .contenedor__logo .logo__abierto:hover {
+        opacity: 100%; }
+    .contenedor__logo__grid .contenedor__logo #logo__abiertoReservas {
+      width: 8.2rem; }
+  .contenedor__logo__grid .antorcha, .contenedor__logo__grid .contenedor__antorchaIzq .antorchaIzq, .contenedor__logo__grid .contenedor__antorchaDer .antorchaIzq, .contenedor__logo__grid .antorchaDer {
+    width: 5rem;
+    align-self: flex-end; }
+  .contenedor__logo__grid .contenedor__antorchaIzq, .contenedor__logo__grid .contenedor__antorchaDer {
+    grid-column: 1/1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .contenedor__logo__grid .contenedor__antorchaDer {
+    grid-column: 3/4; }
+  .contenedor__logo__grid .antorchaDer {
+    align-self: flex-start; }
+
+/*CSS SECTION*/
+.sect__titulo {
+  font-style: italic;
+  color: #FFF3B0;
+  text-align: center; }
+
+.sect__container {
+  border-top: solid 5px #540B0E;
+  border-bottom: solid 5px #540B0E;
+  border-radius: 1%;
+  padding: 1em;
+  margin: auto;
+  margin-bottom: 3em;
+  max-width: 60rem;
+  color: #FFF3B0;
+  text-align: center; }
+  .sect__container .sect__iframe {
+    width: 66%; }
+  @media screen and (max-width: 768px) {
+    .sect__container .sect__iframe {
+      width: 100%; } }
+
+/*CSS FOOTER*/
+footer {
+  color: #a37676;
+  background-color: #540B0E; }
+  footer .subt {
+    color: #FFF3B0; }
+  footer .footer__info {
+    font-size: 0.8em; }
+  footer .redes_img {
+    width: 1.5rem; }
+  footer .footer__tituloredes {
+    font-size: 1em; }
+  footer .linkCopyright {
+    font-style: italic;
+    color: #335C67;
+    transition: 0.2s; }
+    footer .linkCopyright:hover {
+      color: #FFF3B0; }
+    footer .linkCopyright:active {
+      color: #335C67; }
+
+/*CSS SALAS*/
+.salas__contenedor {
+  max-width: 100%; }
+  .salas__contenedor .salas__tarjeta {
+    color: #540B0E;
+    margin-top: 2em;
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    .salas__contenedor .salas__contenedor {
+      max-width: 70%; }
+    .salas__contenedor .salas__tarjeta {
+      transition: transform 0.2s; }
+      .salas__contenedor .salas__tarjeta:hover {
+        transform: scale(1.3);
+        z-index: 2; }
+      .salas__contenedor .salas__tarjeta .enlace__reservas {
+        color: #9E2A2B; }
+        .salas__contenedor .salas__tarjeta .enlace__reservas:hover {
+          color: #335C67; } }
+
+/*CSS TARIFAS*/
+table {
+  font-size: 1.5em; }
+  table th, table td {
+    color: #FFF3B0; }
+
+/*CSS FORMS*/
+.form__contenedor {
+  max-width: 45rem;
+  margin: auto; }
+  .form__contenedor form {
+    color: #FFF3B0;
+    border: outset 2px #9E2A2B;
+    border-radius: 5%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    /*SE AGREGA UN EXTEND PARA REUTILIZAR LA CLASE .btn-enviar*/ }
+    .form__contenedor form .form__reservas {
+      max-width: 20rem; }
+    .form__contenedor form .btn-enviar, .form__contenedor form .btn-borrar {
+      background-color: #335C67;
+      color: #FFF3B0; }
+      .form__contenedor form .btn-enviar:hover, .form__contenedor form .btn-borrar:hover {
+        background-color: #2fd107; }
+    .form__contenedor form .btn-borrar {
+      background-color: #9E2A2B; }
+      .form__contenedor form .btn-borrar:hover {
+        background-color: #540B0E; }
