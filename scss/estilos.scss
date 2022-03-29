@@ -226,10 +226,19 @@ footer {
       }
       
       .enlace__reservas {
-        color: $color_detalles2;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color_textos;
+        border: solid 1px $color_detalles3;
+        border-radius: 5%;
+        background-color: $color_detalles2;
+        padding: 0.6rem;
+        transition: .4s;
         
         &:hover {
-          color: $color_detalles1;
+          color: $color_detalles3;
+          background-color: $color_textos;
+          transition: .4s;
         }
       }
     }
@@ -252,7 +261,8 @@ table {
 
 .form__contenedor {
   max-width: 45rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   
   form {
     color: $color_textos;
