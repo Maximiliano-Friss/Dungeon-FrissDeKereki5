@@ -7832,6 +7832,12 @@ textarea.form-control-lg {
 
 /*MAP PARA DEFINIR TAMAÑOS DE FUENTE*/
 /*MIXIN PARA DEFINIR ESTILO DE FUENTE Y COLOR*/
+#whatsapp {
+  position: fixed;
+  bottom: 1em;
+  right: 0.3em;
+  width: 1.9rem; }
+
 /*CSS NAVBAR*/
 .navegador {
   padding: 0; }
