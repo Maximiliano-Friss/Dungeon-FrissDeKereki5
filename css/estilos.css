@@ -7914,6 +7914,9 @@ textarea.form-control-lg {
     align-self: flex-start; }
 
 /*CSS SECTION*/
+.section__textos {
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; }
+
 .sect__titulo {
   font-style: italic;
   color: #FFF3B0;

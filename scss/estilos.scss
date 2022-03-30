@@ -143,6 +143,9 @@ $cuerpo-letra: (
 }
 
 /*CSS SECTION*/
+.section__textos {
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
 
 .sect__titulo {
   @include estilos-letra(italic, $color_textos);
