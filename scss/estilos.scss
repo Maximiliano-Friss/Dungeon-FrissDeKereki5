@@ -2,9 +2,9 @@
 @import "fonts";
 @import "structure";
 // Include any default variable overrides here (though functions won't be available)
-$navbar-dark-color: $color_textos;
-$navbar-dark-hover-color: white;
-$navbar-dark-active-color: $color_detalles2;
+$navbar-light-color: $color_textos;
+$navbar-light-hover-color: $color_detalles3;
+$navbar-light-active-color: $color_detalles3;
 $carousel-caption-color: $color_textos;
 $carousel-control-color: $color_textos;
 @import "../bootstrap/scss/bootstrap";
@@ -32,25 +32,44 @@ $cuerpo-letra: (
   width: 1.9rem;
 }
 
-/*CSS NAVBAR*/
+/*CSS HEADER*/
 
-.navegador {
-  padding: 0;
+header {
+  background-color: $color_detalles2;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  
+  .header__brand {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height: 2em;
 
-  .navegador__barra {
-    background-color: rgb(65, 0, 0);
-    text-align: center;
+    a {
+      text-decoration: none;
 
-    .navbar__logo {
-      width: 1.8em;
+      .header__brand__Img {
+        width: 1.8em;
+        height: 1.8em;
+      }
+      
+      .header__brand__h1 {
+        @include estilos-letra(normal, $color_textos);
+        font-size: map-get($cuerpo-letra, medio);
+        letter-spacing: 0.3rem;
+        transition: .4s;
+
+        &:hover {
+          color: $color_detalles3;
+          transition: .4s;
+        }
+      }
     }
-    
-    .navbar__h1 {
-      @include estilos-letra(normal, $color_textos);
-      font-size: map-get($cuerpo-letra, medio);
-      margin: 0 auto 0 0.2em;
-      letter-spacing: 0.2em;
-    }
+  }
+
+  nav {
+    grid-column: 6/13;
+    grid-row: 1/2;
+    width: 100%;
   }
 }
 
