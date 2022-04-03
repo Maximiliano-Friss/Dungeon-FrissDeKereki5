@@ -18,40 +18,37 @@
 
   <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top navegador">
-      <div class="container-fluid navegador__barra">
-        <img class="navbar__logo" src="../img/door.png" alt="Logo">
-        <h1 class="navbar__h1 animate__animated animate__backInRight animate__slower">DUNGEON</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./salas.html">Salas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./tarifas.html">Tarifas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Reservas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
+    <!-- HEADER -->
+    
+    <header class="container-fluid">
+      <div class="header__brand h-100">
+        <a class="d-flex align-items-center h-100" href="#">
+          <img class="header__brand__Img" src="../img/door.png" alt="Dungeon">
+          <h1 class="header__brand__h1 my-auto ms-2">DUNGEON</h1>
+        </a>
       </div>
-	  </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="./salas.html">Salas</a>
+              <a class="nav-link" href="./tarifas.html">Tarifas</a>
+              <a class="nav-link active" aria-current="page" href="#">Reservas</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
 
       <!-- LOGOS -->
-      <div class="contenedor__logo__grid mt-5">
+      <div class="contenedor__logo__grid mt-2">
           <div class="contenedor__antorchaIzq">
               <img class="antorchaIzq animate__animated animate__flash animate__delay-1s animate__slower animate__infinite" src="../img/torch.png" alt="antorcha">
           </div>
@@ -68,7 +65,7 @@
         <h3 class="sect__titulo">Reservas</h3>
         <div class="row sect__container form__contenedor">
             <div class="col-sm-12 col-md-4 align-self-center">
-              <p>Las pesadas puertas del calabozo se abren con un chirrido... ¿Preparados para el desafío?</p>
+              <p>Las pesadas puertas del calabozo se abren con un estridente chirrido... <br> ¿Preparados para el desafío?</p>
               <p class="sect1__texto">¡Reúne a tu familia y amigos, escojan la habitación que más les guste y seleccionen uno de los días y horarios disponibles!</p>
             </div>
             <div class="col-sm-12 col-md-8">
