@@ -199,6 +199,9 @@ footer {
   color: #a37676;
   background-color: $color_detalles3;
   
+  a {
+    text-decoration: none;
+  }
   .subt {
     color: $color_textos;
   }
